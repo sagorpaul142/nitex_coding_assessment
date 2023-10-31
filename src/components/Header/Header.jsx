@@ -12,6 +12,7 @@ const Header = () => {
             setScrollClass('')
         }
     }
+
     useEffect(() => {
         window.addEventListener("scroll", () => getScroll());
     }, [])
@@ -27,16 +28,29 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <Link to="#" className="nav-link active" aria-current="page">Home</Link>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <Scroll.Link*/}
+                        {/*        to="/"*/}
+                        {/*        className="nav-link scrollto"*/}
+                        {/*        aria-current="page"*/}
+                        {/*        smooth={true}*/}
+                        {/*        duration={500}*/}
+                        {/*        offset={-55}*/}
+                        {/*        spy={true}*/}
+                        {/*        activeClass={'nav-active'}*/}
+                        {/*    >*/}
+                        {/*        Home*/}
+                        {/*    </Scroll.Link>*/}
+                        {/*</li>*/}
                         <li className="nav-item">
                             <Scroll.Link
                                 to="hero"
                                 smooth={true}
                                 duration={500}
                                 offset={-55}
+                                spy={true}
                                 className="nav-link scrollto"
+                                activeClass={'nav-active'}
                             >
                                 About Us
                             </Scroll.Link>
@@ -47,7 +61,9 @@ const Header = () => {
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
+                                spy={true}
                                 className="nav-link scrollto"
+                                activeClass={'nav-active'}
                             >
                                 Services
                             </Scroll.Link>
@@ -58,7 +74,9 @@ const Header = () => {
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
+                                spy={true}
                                 className="nav-link scrollto"
+                                activeClass={'nav-active'}
                             >
                                 Faq
                             </Scroll.Link>
@@ -69,7 +87,9 @@ const Header = () => {
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
+                                spy={true}
                                 className="nav-link scrollto"
+                                activeClass={'nav-active'}
                             >
                                 Team
                             </Scroll.Link>
@@ -80,7 +100,9 @@ const Header = () => {
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
+                                spy={true}
                                 className="nav-link scrollto"
+                                activeClass={'nav-active'}
                             >
                                 Blog
                             </Scroll.Link>
@@ -91,7 +113,9 @@ const Header = () => {
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
+                                spy={true}
                                 className="nav-link scrollto"
+                                activeClass={'nav-active'}
                             >
                                 Contact
                             </Scroll.Link>
