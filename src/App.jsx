@@ -5,6 +5,7 @@ import Services from "./components/Services/Services.jsx";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs.jsx";
 import Faq from "./components/Faq/Faq.jsx";
 import Team from "./components/Team/Team.jsx";
+import Blog from "./components/Blog/Blog.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <WhyChooseUs/>
             <Faq/>
             <Team/>
+            <Blog/>
         </BrowserRouter>
     )
 }
