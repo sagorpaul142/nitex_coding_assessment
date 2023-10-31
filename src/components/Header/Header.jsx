@@ -47,7 +47,7 @@ const Header = () => {
                                 to="hero"
                                 smooth={true}
                                 duration={500}
-                                offset={-55}
+                                offset={-65}
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
@@ -73,7 +73,7 @@ const Header = () => {
                                 to="faq"
                                 smooth={true}
                                 duration={500}
-                                offset={-50}
+                                offset={-80}
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
