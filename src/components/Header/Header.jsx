@@ -1,4 +1,4 @@
-import "./Header.scss"
+import "./Header.css"
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import * as Scroll from "react-scroll"
@@ -35,6 +35,7 @@ const Header = () => {
                                 to="hero"
                                 smooth={true}
                                 duration={500}
+                                offset={-55}
                                 className="nav-link scrollto"
                             >
                                 About Us
@@ -45,6 +46,7 @@ const Header = () => {
                                 to="services"
                                 smooth={true}
                                 duration={500}
+                                offset={-50}
                                 className="nav-link scrollto"
                             >
                                 Services
@@ -52,35 +54,46 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                             <Scroll.Link
-                                to="#"
+                                to="faq"
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
                                 className="nav-link scrollto"
                             >
-                                Testimonials
+                                Faq
                             </Scroll.Link>
                         </li>
                         <li className="nav-item">
                             <Scroll.Link
-                                to="#"
+                                to="team"
+                                smooth={true}
+                                duration={500}
+                                offset={-50}
+                                className="nav-link scrollto"
+                            >
+                                Team
+                            </Scroll.Link>
+                        </li>
+                        <li className="nav-item">
+                            <Scroll.Link
+                                to="recent-blog-posts"
+                                smooth={true}
+                                duration={500}
+                                offset={-50}
+                                className="nav-link scrollto"
+                            >
+                                Blog
+                            </Scroll.Link>
+                        </li>
+                        <li className="nav-item">
+                            <Scroll.Link
+                                to="contact"
                                 smooth={true}
                                 duration={500}
                                 offset={-50}
                                 className="nav-link scrollto"
                             >
                                 Contact
-                            </Scroll.Link>
-                        </li>
-                        <li className="nav-item">
-                            <Scroll.Link
-                                to="#"
-                                smooth={true}
-                                duration={500}
-                                offset={-50}
-                                className="nav-link scrollto"
-                            >
-                                Project
                             </Scroll.Link>
                         </li>
                     </ul>

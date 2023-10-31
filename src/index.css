@@ -6,3 +6,33 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #124265;
+}
+
+.section-header p {
+    margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+    .section-header p {
+        max-width: 80%;
+    }
+}
+
