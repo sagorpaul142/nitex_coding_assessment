@@ -36,3 +36,10 @@
     visibility: visible;
     transform: scaleX(.7);
 }
+
+@media (max-width: 991.99px) {
+    .nav-active:before {
+        width: 0%;
+    }
+
+}

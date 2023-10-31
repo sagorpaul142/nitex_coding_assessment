@@ -5,6 +5,14 @@ import * as Scroll from "react-scroll"
 
 const Header = () => {
     const [scrollClass, setScrollClass] = useState('');
+    const [isNavOpen, setIsNavOpen] = useState(false); // Added state to control menu visibility
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen); // Toggle the mobile menu state
+    };
+    const closeNav = () => {
+        setIsNavOpen(false); // Close the mobile menu
+    };
     const getScroll = () => {
         if (window.scrollY > 3) {
             setScrollClass('sticked')
@@ -25,42 +33,35 @@ const Header = () => {
                     className="navbar-brand"
                     onClick={() => {
                         window.scroll({
-                            top:0
+                            top: 0
                         })
                     }}
                 >
                     Nitex
                 </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button
+                    onClick={toggleNav}
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded={isNavOpen}
+                    aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`} id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        {/*<li className="nav-item">*/}
-                        {/*    <Scroll.Link*/}
-                        {/*        to="/"*/}
-                        {/*        className="nav-link scrollto"*/}
-                        {/*        aria-current="page"*/}
-                        {/*        smooth={true}*/}
-                        {/*        duration={500}*/}
-                        {/*        offset={-55}*/}
-                        {/*        spy={true}*/}
-                        {/*        activeClass={'nav-active'}*/}
-                        {/*    >*/}
-                        {/*        Home*/}
-                        {/*    </Scroll.Link>*/}
-                        {/*</li>*/}
                         <li className="nav-item">
                             <Scroll.Link
                                 to="hero"
                                 smooth={true}
                                 duration={500}
-                                offset={-65}
+                                offset={-50}
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
+                                onClick={closeNav}
                             >
                                 About Us
                             </Scroll.Link>
@@ -74,6 +75,7 @@ const Header = () => {
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
+                                onClick={closeNav}
                             >
                                 Services
                             </Scroll.Link>
@@ -83,10 +85,11 @@ const Header = () => {
                                 to="faq"
                                 smooth={true}
                                 duration={500}
-                                offset={-80}
+                                offset={-50}
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
+                                onClick={closeNav}
                             >
                                 Faq
                             </Scroll.Link>
@@ -96,10 +99,11 @@ const Header = () => {
                                 to="team"
                                 smooth={true}
                                 duration={500}
-                                offset={-65}
+                                offset={-50}
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
+                                onClick={closeNav}
                             >
                                 Team
                             </Scroll.Link>
@@ -113,6 +117,7 @@ const Header = () => {
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
+                                onClick={closeNav}
                             >
                                 Blog
                             </Scroll.Link>
@@ -126,6 +131,7 @@ const Header = () => {
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}
+                                onClick={closeNav}
                             >
                                 Contact
                             </Scroll.Link>
