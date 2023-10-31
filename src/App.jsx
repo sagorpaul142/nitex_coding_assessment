@@ -9,9 +9,16 @@ import Blog from "./components/Blog/Blog.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import NewsLetter from "./components/Newsletter/NewsLetter.jsx";
+import {useEffect} from "react";
+import AOS from 'aos';
 
 function App() {
-
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true, // Animation only occurs once
+        });
+    }, [])
     return (
         <BrowserRouter>
             <Header/>
