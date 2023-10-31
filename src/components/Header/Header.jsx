@@ -20,7 +20,17 @@ const Header = () => {
     return (
         <nav className={`navbar navbar-expand-lg bg-gray sticky-top ${scrollClass}`}>
             <div className="container-fluid">
-                <Link to="#" className="navbar-brand">Nitex</Link>
+                <Link
+                    to="/"
+                    className="navbar-brand"
+                    onClick={() => {
+                        window.scroll({
+                            top:0
+                        })
+                    }}
+                >
+                    Nitex
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +96,7 @@ const Header = () => {
                                 to="team"
                                 smooth={true}
                                 duration={500}
-                                offset={-50}
+                                offset={-65}
                                 spy={true}
                                 className="nav-link scrollto"
                                 activeClass={'nav-active'}

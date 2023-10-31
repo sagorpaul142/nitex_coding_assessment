@@ -4,6 +4,7 @@ import HeroSection from "./components/Hero/HeroSection.jsx";
 import Services from "./components/Services/Services.jsx";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs.jsx";
 import Faq from "./components/Faq/Faq.jsx";
+import Team from "./components/Team/Team.jsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Services/>
             <WhyChooseUs/>
             <Faq/>
+            <Team/>
         </BrowserRouter>
     )
 }
