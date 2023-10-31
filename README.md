@@ -1,8 +1,27 @@
-# React + Vite
+# Getting Started
+<hr/>
+First, clone the code project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```bash
+git clone https://github.com/sagorpaul142/nitex_coding_assessment.git
+```
+Second, then open a terminal in the project folder
 
-Currently, two official plugins are available:
+Third, write down the belows command in the terminal and then enter, after that all the dependencies install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+```
+
+Fourth, write down the belows command in the terminal and then enter. after that the development server will be run
+```bash
+npm run dev
+# or
+yarn run dev
+```
+
+Open http://localhost:5173/ with your browser to see the result.
+
+# Link
+<h6>Github link : https://github.com/sagorpaul142/nitex_coding_assessment.git </h6>
+<h6>Live link : https://nitex-coding-assessment.vercel.app/ </h6>
