@@ -15,8 +15,8 @@ import AOS from 'aos';
 function App() {
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration
-            once: true, // Animation only occurs once
+            duration: 1000,
+            once: true,
         });
     }, [])
     return (
