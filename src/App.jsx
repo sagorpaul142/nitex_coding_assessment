@@ -8,6 +8,7 @@ import Team from "./components/Team/Team.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import NewsLetter from "./components/Newsletter/NewsLetter.jsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Team/>
             <Blog/>
             <Contact/>
+            <NewsLetter/>
             <Footer/>
         </BrowserRouter>
     )
